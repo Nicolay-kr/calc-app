@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <title>Rectangle App</title>
+  <link rel="stylesheet" href="bulma.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <section class="section">
+        <div class="columns">
+          <div class="column is-8">
+            <div class="content is-medium">
+              <h1>Calc App</h1>
+              <div class="app">
+                <div class="app-top-bar">
+                  <span class="app-display" id="app-display">0</span>
+                </div>
+                <div class="app-keys">
+                  <span class="key">AC</span>
+                  <span class="key">(</span>
+                  <span class="key">)</span>
+                  <span class="key key-operation">÷</span>
+                  <span class="key">7</span>
+                  <span class="key">8</span>
+                  <span class="key">9</span>
+                  <span class="key key-operation">x</span>
+                  <span class="key">4</span>
+                  <span class="key">5</span>
+                  <span class="key">6</span>
+                  <span class="key key-operation">-</span>
+                  <span class="key">1</span>
+                  <span class="key">2</span>
+                  <span class="key">3</span>
+                  <span class="key key-operation">+</span>
+                  <span class="key double-key">0</span>
+                  <span class="key">.</span>
+                  <span class="key key-operation">=</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+  <style>
+    .app {
+      width: 300px;
+      height: 373px;
+      border: solid 3px #666;
+    }
+
+    .app-top-bar {
+      padding: 10px;
+      background: #eee;
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+      border-bottom: solid 1px #666;
+    }
+
+    .app-keys {
+      display: flex;
+      height: 300px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .key {
+      width: 70px;
+      height: 55px;
+      margin: auto;
+      text-align: center;
+      padding-top: 10px;
+      border: solid 1px #eee;
+      user-select: none;
+    }
+    .key:hover {
+      background: #eee;
+      color: #333;
+      cursor: pointer;
+    }
+    .key:active {
+      background: #ddd;
+      color: #333;
+      cursor: pointer;
+    }
+    .double-key {
+      width: 143px;
+      margin-left: 2px;
+    }
+    .key-operation {
+      background: rgb(238, 155, 0);
+      color: #333;
+      border-color: #666;
+    }
+    .key-operation:hover {
+      background: rgb(255, 167, 3);
+    }
+    .key-operation:active {
+      background: rgb(209, 136, 1);
+      color: #fff;
+    }
+  </style>
+
+
+</body>
+
+</html>
